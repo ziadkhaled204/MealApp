@@ -1,16 +1,62 @@
-# meals_app
+🍽️ Meal App
 
-A new Flutter project.
+A Flutter meal application that allows users to browse, search, and filter meals based on different categories and preferences. This project utilizes Riverpod for state management, ensuring a clean and maintainable architecture.
 
-## Getting Started
+✨ Features
 
-This project is a starting point for a Flutter application.
+📖 Browse a variety of meals
 
-A few resources to get you started if this is your first Flutter project:
+🔍 Search for meals by name
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🎛️ Filter meals based on dietary preferences
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📜 View detailed meal recipes and ingredients
+
+⭐ Add meals to favorites
+
+🛠️ Tech Stack
+
+🚀 Flutter - UI framework for cross-platform mobile development
+
+💙 Dart - Programming language
+
+🌿 Riverpod - State management solution for predictable and scalable state handling
+
+❄️ Freezed - Data classes and union types for immutability
+
+📦 Installation
+
+git clone https://github.com/yourusername/meal-app.git
+cd meal-app
+flutter pub get
+flutter run
+
+🔗 State Management with Riverpod
+
+This project leverages Riverpod for state management, ensuring a reactive and scalable architecture. The following Riverpod providers are used:
+
+🟢 StateProvider for managing UI state like filters
+
+🔵 NotifierProvider for managing complex state such as favorite meals
+
+Example usage:
+
+final favoriteMealsProvider = NotifierProvider<FavoriteMealsNotifier, List<Meal>>(() {
+  return FavoriteMealsNotifier();
+});
+
+📂 Folder Structure
+
+lib/
+│── main.dart
+├── providers/
+├── models/
+├── data/
+├── widgets/
+
+🤝 Contributing
+
+Contributions are welcome! Feel free to open issues and submit pull requests.
+
+Made with ❤️ by ziad khaled
+
